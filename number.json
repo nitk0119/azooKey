@@ -72,57 +72,33 @@
         "specifier_type": "grid_fit",
         "key_type": "custom",
         "key": {
-          "variations": [
+          "design": {
+            "label": {
+              "system_image": "delete.left"
+            },
+            "color": "special"
+          },
+          "press_actions": [
             {
-              "type": "flick_variation",
-              "key": {
-                "press_actions": [
-                  {
-                    "type": "move_cursor",
-                    "count": 100
-                  }
-                ],
-                "longpress_actions": {
-                  "repeat": [],
-                  "start": [],
-                  "duration": "normal"
-                },
-                "design": {
-                  "label": {
-                    "text": "▷▷"
-                  }
-                }
-              },
-              "direction": "top"
+              "type": "delete",
+              "count": 1
             }
           ],
           "longpress_actions": {
             "start": [
               {
-                "type": "move_cursor",
+                "type": "delete",
                 "count": 1
               }
             ],
             "repeat": [
               {
-                "type": "move_cursor",
+                "type": "delete",
                 "count": 1
               }
-            ],
-            "duration": "normal"
+            ]
           },
-          "press_actions": [
-            {
-              "type": "move_cursor",
-              "count": 1
-            }
-          ],
-          "design": {
-            "color": "special",
-            "label": {
-              "text": "▷"
-            }
-          }
+          "variations": []
         }
       },
       {
@@ -447,23 +423,33 @@
           "y": 1
         },
         "key": {
-          "variations": [],
           "design": {
-            "color": "special",
             "label": {
-              "system_image": "doc.on.doc"
-            }
+              "text": "◁"
+            },
+            "color": "special"
           },
           "press_actions": [
             {
-              "type": "paste"
+              "type": "move_cursor",
+              "count": -1
             }
           ],
           "longpress_actions": {
-            "start": [],
-            "duration": "normal",
-            "repeat": []
-          }
+            "start": [
+              {
+                "type": "move_cursor",
+                "count": -1
+              }
+            ],
+            "repeat": [
+              {
+                "type": "move_cursor",
+                "count": -1
+              }
+            ]
+          },
+          "variations": []
         }
       },
       {
@@ -726,57 +712,22 @@
         "specifier_type": "grid_fit",
         "key_type": "custom",
         "key": {
-          "variations": [
-            {
-              "type": "flick_variation",
-              "key": {
-                "design": {
-                  "label": {
-                    "text": "◁◁"
-                  }
-                },
-                "longpress_actions": {
-                  "repeat": [],
-                  "start": [],
-                  "duration": "normal"
-                },
-                "press_actions": [
-                  {
-                    "type": "move_cursor",
-                    "count": -100
-                  }
-                ]
-              },
-              "direction": "top"
-            }
-          ],
           "design": {
-            "color": "special",
             "label": {
-              "text": "◁"
-            }
+              "system_image": "doc.on.doc"
+            },
+            "color": "special"
           },
           "press_actions": [
             {
-              "type": "move_cursor",
-              "count": -1
+              "type": "paste"
             }
           ],
           "longpress_actions": {
-            "duration": "normal",
-            "start": [
-              {
-                "count": -1,
-                "type": "move_cursor"
-              }
-            ],
-            "repeat": [
-              {
-                "count": -1,
-                "type": "move_cursor"
-              }
-            ]
-          }
+            "start": [],
+            "repeat": []
+          },
+          "variations": []
         }
       },
       {
@@ -1144,78 +1095,33 @@
           "width": 1
         },
         "key": {
+          "design": {
+            "label": {
+              "text": "▷"
+            },
+            "color": "special"
+          },
+          "press_actions": [
+            {
+              "type": "move_cursor",
+              "count": 1
+            }
+          ],
           "longpress_actions": {
             "start": [
               {
-                "type": "delete",
+                "type": "move_cursor",
                 "count": 1
               }
             ],
             "repeat": [
               {
-                "type": "delete",
+                "type": "move_cursor",
                 "count": 1
               }
-            ],
-            "duration": "normal"
+            ]
           },
-          "variations": [
-            {
-              "direction": "left",
-              "type": "flick_variation",
-              "key": {
-                "press_actions": [
-                  {
-                    "type": "smart_delete_default"
-                  }
-                ],
-                "design": {
-                  "label": {
-                    "system_image": "delete.left.fill"
-                  }
-                },
-                "longpress_actions": {
-                  "duration": "normal",
-                  "repeat": [],
-                  "start": []
-                }
-              }
-            },
-            {
-              "direction": "top",
-              "type": "flick_variation",
-              "key": {
-                "press_actions": [
-                  {
-                    "type": "delete",
-                    "count": 100
-                  }
-                ],
-                "longpress_actions": {
-                  "start": [],
-                  "repeat": [],
-                  "duration": "normal"
-                },
-                "design": {
-                  "label": {
-                    "system_image": "clear.fill"
-                  }
-                }
-              }
-            }
-          ],
-          "press_actions": [
-            {
-              "type": "delete",
-              "count": 1
-            }
-          ],
-          "design": {
-            "color": "special",
-            "label": {
-              "system_image": "delete.left"
-            }
-          }
+          "variations": []
         },
         "specifier_type": "grid_fit",
         "key_type": "custom"
@@ -1325,6 +1231,99 @@
           }
         },
         "specifier_type": "grid_fit"
+      },
+      {
+        "specifier": {
+          "x": 1,
+          "y": 3,
+          "width": 1,
+          "height": 1
+        },
+        "specifier_type": "grid_fit",
+        "key_type": "custom",
+        "key": {
+          "design": {
+            "label": {
+              "text": ":"
+            },
+            "color": "normal"
+          },
+          "press_actions": [
+            {
+              "type": "input",
+              "text": ":"
+            }
+          ],
+          "longpress_actions": {
+            "start": [],
+            "repeat": []
+          },
+          "variations": [
+            {
+              "type": "flick_variation",
+              "direction": "left",
+              "key": {
+                "design": {
+                  "label": {
+                    "text": "/"
+                  }
+                },
+                "press_actions": [
+                  {
+                    "type": "input",
+                    "text": "/"
+                  }
+                ],
+                "longpress_actions": {
+                  "start": [],
+                  "repeat": []
+                }
+              }
+            },
+            {
+              "type": "flick_variation",
+              "direction": "top",
+              "key": {
+                "design": {
+                  "label": {
+                    "text": ","
+                  }
+                },
+                "press_actions": [
+                  {
+                    "type": "input",
+                    "text": ","
+                  }
+                ],
+                "longpress_actions": {
+                  "start": [],
+                  "repeat": []
+                }
+              }
+            },
+            {
+              "type": "flick_variation",
+              "direction": "right",
+              "key": {
+                "design": {
+                  "label": {
+                    "text": "."
+                  }
+                },
+                "press_actions": [
+                  {
+                    "type": "input",
+                    "text": "."
+                  }
+                ],
+                "longpress_actions": {
+                  "start": [],
+                  "repeat": []
+                }
+              }
+            }
+          ]
+        }
       }
     ],
     "key_layout": {

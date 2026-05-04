@@ -285,57 +285,22 @@
           "height": 1
         },
         "key": {
-          "variations": [
-            {
-              "key": {
-                "design": {
-                  "label": {
-                    "text": "◁◁"
-                  }
-                },
-                "longpress_actions": {
-                  "duration": "normal",
-                  "start": [],
-                  "repeat": []
-                },
-                "press_actions": [
-                  {
-                    "type": "move_cursor",
-                    "count": -100
-                  }
-                ]
-              },
-              "type": "flick_variation",
-              "direction": "top"
-            }
-          ],
-          "longpress_actions": {
-            "repeat": [
-              {
-                "type": "move_cursor",
-                "count": -1
-              }
-            ],
-            "duration": "normal",
-            "start": [
-              {
-                "type": "move_cursor",
-                "count": -1
-              }
-            ]
+          "design": {
+            "label": {
+              "system_image": "doc.on.doc"
+            },
+            "color": "special"
           },
           "press_actions": [
             {
-              "type": "move_cursor",
-              "count": -1
+              "type": "paste"
             }
           ],
-          "design": {
-            "label": {
-              "text": "◁"
-            },
-            "color": "special"
-          }
+          "longpress_actions": {
+            "start": [],
+            "repeat": []
+          },
+          "variations": []
         },
         "specifier_type": "grid_fit",
         "key_type": "custom"
@@ -609,56 +574,32 @@
         "key_type": "custom",
         "key": {
           "design": {
-            "color": "special",
             "label": {
-              "text": "▷"
-            }
+              "system_image": "delete.left"
+            },
+            "color": "special"
           },
+          "press_actions": [
+            {
+              "type": "delete",
+              "count": 1
+            }
+          ],
           "longpress_actions": {
             "start": [
               {
-                "count": 1,
-                "type": "move_cursor"
+                "type": "delete",
+                "count": 1
               }
             ],
             "repeat": [
               {
-                "count": 1,
-                "type": "move_cursor"
+                "type": "delete",
+                "count": 1
               }
-            ],
-            "duration": "normal"
+            ]
           },
-          "press_actions": [
-            {
-              "type": "move_cursor",
-              "count": 1
-            }
-          ],
-          "variations": [
-            {
-              "key": {
-                "design": {
-                  "label": {
-                    "text": "▷▷"
-                  }
-                },
-                "longpress_actions": {
-                  "repeat": [],
-                  "duration": "normal",
-                  "start": []
-                },
-                "press_actions": [
-                  {
-                    "type": "move_cursor",
-                    "count": 100
-                  }
-                ]
-              },
-              "type": "flick_variation",
-              "direction": "top"
-            }
-          ]
+          "variations": []
         },
         "specifier": {
           "width": 1,
@@ -794,78 +735,33 @@
           "width": 1
         },
         "key": {
-          "variations": [
-            {
-              "direction": "left",
-              "type": "flick_variation",
-              "key": {
-                "press_actions": [
-                  {
-                    "type": "smart_delete_default"
-                  }
-                ],
-                "longpress_actions": {
-                  "duration": "normal",
-                  "start": [],
-                  "repeat": []
-                },
-                "design": {
-                  "label": {
-                    "system_image": "delete.left.fill"
-                  }
-                }
-              }
+          "design": {
+            "label": {
+              "text": "▷"
             },
+            "color": "special"
+          },
+          "press_actions": [
             {
-              "direction": "top",
-              "type": "flick_variation",
-              "key": {
-                "longpress_actions": {
-                  "duration": "normal",
-                  "start": [],
-                  "repeat": []
-                },
-                "press_actions": [
-                  {
-                    "count": 100,
-                    "type": "delete"
-                  }
-                ],
-                "design": {
-                  "label": {
-                    "system_image": "clear.fill"
-                  }
-                }
-              }
+              "type": "move_cursor",
+              "count": 1
             }
           ],
           "longpress_actions": {
             "start": [
               {
-                "type": "delete",
+                "type": "move_cursor",
                 "count": 1
               }
             ],
-            "duration": "normal",
             "repeat": [
               {
-                "type": "delete",
+                "type": "move_cursor",
                 "count": 1
               }
             ]
           },
-          "press_actions": [
-            {
-              "type": "delete",
-              "count": 1
-            }
-          ],
-          "design": {
-            "label": {
-              "system_image": "delete.left"
-            },
-            "color": "special"
-          }
+          "variations": []
         },
         "key_type": "custom",
         "specifier_type": "grid_fit"
@@ -1270,23 +1166,33 @@
         "key_type": "custom",
         "specifier_type": "grid_fit",
         "key": {
-          "variations": [],
-          "longpress_actions": {
-            "repeat": [],
-            "duration": "normal",
-            "start": []
-          },
           "design": {
-            "color": "special",
             "label": {
-              "system_image": "doc.on.doc"
-            }
+              "text": "◁"
+            },
+            "color": "special"
           },
           "press_actions": [
             {
-              "type": "paste"
+              "type": "move_cursor",
+              "count": -1
             }
-          ]
+          ],
+          "longpress_actions": {
+            "start": [
+              {
+                "type": "move_cursor",
+                "count": -1
+              }
+            ],
+            "repeat": [
+              {
+                "type": "move_cursor",
+                "count": -1
+              }
+            ]
+          },
+          "variations": []
         },
         "specifier": {
           "height": 1,
